@@ -8,6 +8,12 @@ import (
 	"github.com/tidwall/gjson"
 )
 
+/**
+Author: Wang Fei (Kaelan)
+institute: VIK
+Date: 2023-3-14
+Description: This program is used to get the data from the penweather.
+**/
 func main() {
 	//get the weather data from openweathermap.org
 	city := "Budapest"
