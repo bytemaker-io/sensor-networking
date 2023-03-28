@@ -64,8 +64,9 @@ func getdata() {
 		if data == "END" {
 			break
 		}
-		if _, err := strconv.Atoi(data); err == nil {
-			writer.Write([]string{t, data})
+		error:=writer.Write([]string{t, data})
+		if error!=nil{
+			panic(error)
 		}
 	}
 }
