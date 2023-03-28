@@ -64,7 +64,6 @@ func getdata() {
 		if data == "END" {
 			break
 		}
-		// if the data is a number,write the data to the csv file
 		if _, err := strconv.Atoi(data); err == nil {
 			writer.Write([]string{t, data})
 		}
